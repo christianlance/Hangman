@@ -3,7 +3,7 @@ var easybtn = document.getElementById("easybtn");
 easybtn.addEventListener("click", function(){
     var easyRequest = new XMLHttpRequest();
     easyRequest.open('GET', 'https://hangman-micro-service-bpblrjerwh.now.sh/?difficulty=easy')
-    easyRequest.onLoad = function(){
+    easyRequest.onload = function(){
         var easyData = JSON.parse(easyRequest.responseText);
         console.log(easyData[0]);
     }; 
