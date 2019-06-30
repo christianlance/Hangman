@@ -1,4 +1,4 @@
-var easybtn = document.getElementByID("easybtn");
+var easybtn = document.getElementsByTagName("easybtn");
 easybtn.addEventListener("click", function(){
     var easy = new XMLHttpRequest;
     easy.open('GET', 'https://hangman-micro-service-bpblrjerwh.now.sh/?difficulty=easy')
