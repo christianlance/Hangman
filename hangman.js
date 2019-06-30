@@ -1,4 +1,4 @@
-var easybtn = document.getElementByID("easybtn");
+var easybtn = document.getElementById("easybtn");
 
 easybtn.addEventListener("click", function(){
     var easy = new XMLHttpRequest();
