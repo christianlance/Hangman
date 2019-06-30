@@ -5,7 +5,7 @@ easybtn.addEventListener("click", function(){
     easy.open('GET', 'https://hangman-micro-service-bpblrjerwh.now.sh/?difficulty=easy');
     easy.onLoad = function(){
         var easyData = JSON.parse(easy.responseText);
-        console.log(easyData[0]);
+        console.log(easyData);
     }; 
     easy.send();
 });
